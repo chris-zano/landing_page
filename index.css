@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 300vh;
+}
+
+a {text-decoration: none; color: inherit;}
+a:hover {color: rgb(248, 96, 69);}
+
+header {
+    background-color: rgb(49, 62, 255);
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100vw;
+    border-radius: 3px;
+}
+
+#header .header-logo {
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+#nav-bar ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+hr {
+    width: 60vw;
+    margin: auto;
+}
+
+main{
+    margin-top: 4.5rem;
+}
+
+#title {padding: 0.5rem;}
+#title h1 {font-family: sans-serif; text-align: center; padding: 0.233rem;}
+#title p {text-align: center; padding: 0.233rem;}
+#title form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+#title form input {padding: 0.233rem; margin: 0.233rem;}
+#title form #submit {background-color: rgb(49, 62, 255);
+    color: white;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+#features {width: 90vw; margin: auto;}
+#features h2 {color: rgb(49, 62, 255); font-family: sans-serif; font-size: 20px; padding: 0.233rem;}
+#features p {font-family: sans-serif; font-size: 12px; padding: 1.233rem; padding-top: 0.233rem;}
+
+#description {width: 90vw; margin: auto;}
+#description small {font-family: sans-serif;}
+#description small strong {color: rgb(49, 62, 255); font-weight: 900;}
+
+#offers {
+    padding: 1rem;
+}
+.product {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgb(58, 58, 58);
+    background-color: rgb(240, 240, 240);
+    margin-top: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 30px;
+}
+.product h2 {font-size: 24px;}
+.product h3 {font-size: 18px;}
+.product ol li {list-style: none; font-size: 14px;}
+.product input {width: 150px; height: 50px;}
+
+#beginner h2{ color: rgb(49, 62, 255);}
+#beginner input {
+    background-color: rgb(49, 62, 255); 
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+#beginner input:hover { 
+    background-color: rgb(7, 19, 189); 
+    color: white;
+}
+
+#intermediate h2{ color: rgb(23, 235, 41);}
+#intermediate input {
+    background-color: rgb(23, 235, 41); 
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+#intermediate input:hover { 
+    background-color: rgb(0, 158, 13); 
+    color: white;
+}
+
+#advanced h2{ color: rgb(221, 26, 26);}
+#advanced input {
+    background-color: rgb(221, 26, 26);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+#advanced input:hover { 
+    background-color: rgb(172, 0, 0); 
+    color: white;
+}
+
+footer {
+    height: 100vh;
+    
+}
+footer {
+    margin-top: 30px;
+    background-color: rgb(49, 62, 255);
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    padding: 0px 20px;
+    list-style: none;
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (min-width:1000px) {
+    a {text-decoration: none; color: inherit;}
+    a:hover {color: rgb(248, 96, 69);}
+
+    header {
+        background-color: rgb(49, 62, 255);
+        color: whitesmoke;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: center;
+        width: 100vw;
+        border-radius: 3px;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: 
+        "logo nav-bar";
+    }
+    #header .header-logo {
+        grid-area: logo;
+        width: fit-content;
+        margin: auto;
+        padding: 5px;
+        padding-bottom: 0;
+    }
+
+    #nav-bar ul {
+        width: 100%;
+        margin: 1rem;
+
+    }
+
+    #nav-bar ul li {
+        grid-area: nav-bar;
+        display: inline-block;
+        margin-right: 5rem;
+    }
+
+    hr {
+        width: 60vw;
+        margin: auto;
+    }
+
+    main{
+        margin-top: 4.5rem;
+    }
+
+    #features {
+        text-align: center;
+    }
+
+    #offers {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .product {
+        width: 300px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px rgb(58, 58, 58);
+        background-color: rgb(240, 240, 240);
+        margin-top: 10px;
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 30px;
+    }
+}
